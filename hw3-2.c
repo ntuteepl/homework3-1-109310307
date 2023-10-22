@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 
+//hw3-2
 main()
 {
 int s1,d1,s2,d2,s3,d3;
@@ -30,23 +31,22 @@ if(0 <= s1,d1,s2,d2,s3,d3 <= 24)
     else if(d2 <= s3)
     {
         car = car -1;
-        if( (d2 <= s1 & d1 <= s3) | (d3 <= s2) | (d1 <= s3)  )
+        if( (d2 <= s1 & d1 <= s3) | (d3 <= s1) | (d1 <= s2)  )
             car = car -1;
     }
     else if(d3 <= s1)
     {
         car = car -1;
-        if( (d3 <= s2 & d2 <= s1) | (d1 <= s2) | (d2 <= s1)  )
+        if( (d3 <= s2 & d2 <= s1) | (d1 <= s2) | (d2 <= s3)  )
             car = car -1;
     }
     else if(d3 <= s2)
     {
         car = car -1;
-        if( (d3 <= s1 & d1 <= s2) | (d2 <= s1) | (d1 <= s2)  )
+        if( (d3 <= s1 & d1 <= s2) | (d2 <= s1) | (d1 <= s3)  )
             car = car -1;
     }
 
 }
 printf("%d",car);
 }
-
